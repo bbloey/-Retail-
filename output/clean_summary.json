@@ -1,0 +1,8 @@
+{
+  "rows_clean": 531176,
+  "rows_sales": 522508,
+  "rows_cancel": 8668,
+  "gmv_valid": 10246897.77,
+  "cancel_gmv": -475901.16,
+  "cancel_rate_amount": 4.64
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "rule": "R1 去重(整行重复)",
+    "rows_before": 541909,
+    "rows_after": 536641,
+    "rows_removed": 5268,
+    "gmv_removed": 21740.98,
+    "reason": "整行完全重复，判定为系统重复落库"
+  },
+  {
+    "rule": "R2 描述回填(同StockCode映射)",
+    "rows_before": 1454,
+    "rows_after": 112,
+    "rows_removed": 0,
+    "gmv_removed": 0.0,
+    "reason": "只补全文本，不改金额，可回滚"
+  },
+  {
+    "rule": "R3 剔除非商品科目(邮费/手工调整/坏账/礼品券/测试)",
+    "rows_before": 536641,
+    "rows_after": 533667,
+    "rows_removed": 2974,
+    "gmv_removed": -44989.66,
+    "reason": "非商品交易，计入GMV会虚增收入结构"
+  },
+  {
+    "rule": "R4 剔除单价<=0",
+    "rows_before": 533667,
+    "rows_after": 531176,
+    "rows_removed": 2491,
+    "gmv_removed": 0.0,
+    "reason": "0价/负价为赠品、内部调账、坏账冲销，非真实成交价"
+  },
+  {
+    "rule": "R5 剔除数量<=0的非取消单(退货/报损)",
+    "rows_before": 531176,
+    "rows_after": 531176,
+    "rows_removed": 0,
+    "gmv_removed": 0.0,
+    "reason": "无对应正向销售单，属库存报损或人工调整"
+  }
+]

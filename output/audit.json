@@ -1,0 +1,230 @@
+{
+  "shape": {
+    "rows": 541909,
+    "cols": 8
+  },
+  "columns": {
+    "InvoiceNo": "object",
+    "StockCode": "object",
+    "Description": "object",
+    "Quantity": "int64",
+    "InvoiceDate": "datetime64[ns]",
+    "UnitPrice": "float64",
+    "CustomerID": "float64",
+    "Country": "object"
+  },
+  "date_range": [
+    "2010-12-01 08:26:00",
+    "2011-12-09 12:50:00"
+  ],
+  "missing": {
+    "InvoiceNo": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "StockCode": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "Description": {
+      "n": 1454,
+      "rate": 0.268
+    },
+    "Quantity": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "InvoiceDate": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "UnitPrice": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "CustomerID": {
+      "n": 135080,
+      "rate": 24.927
+    },
+    "Country": {
+      "n": 0,
+      "rate": 0.0
+    }
+  },
+  "quantity_desc": {
+    "count": 541909.0,
+    "mean": 9.55224954743324,
+    "std": 218.08115784986612,
+    "min": -80995.0,
+    "0.1%": -96.0,
+    "1%": -2.0,
+    "25%": 1.0,
+    "50%": 3.0,
+    "75%": 10.0,
+    "99%": 100.0,
+    "99.9%": 468.920000000624,
+    "max": 80995.0
+  },
+  "price_desc": {
+    "count": 541909.0,
+    "mean": 4.611113626088513,
+    "std": 96.75985306119716,
+    "min": -11062.06,
+    "0.1%": 0.0,
+    "1%": 0.19,
+    "25%": 1.25,
+    "50%": 2.08,
+    "75%": 4.13,
+    "99%": 18.0,
+    "99.9%": 205.55980000004055,
+    "max": 38970.0
+  },
+  "neg_qty_rows": 10624,
+  "zero_qty_rows": 0,
+  "neg_price_rows": 2,
+  "zero_price_rows": 2515,
+  "cancel_invoice_rows": 9288,
+  "cancel_invoice_n": 3836,
+  "cancel_amount": -896812.49,
+  "neg_qty_not_cancel": 1336,
+  "neg_qty_neg_price_sample": [],
+  "dup_exact_rows": 5268,
+  "dup_by_key": 5271,
+  "unique_invoice": 25900,
+  "unique_stock": 4070,
+  "unique_customer": 4372,
+  "dup_sample": [
+    {
+      "InvoiceNo": "536409",
+      "StockCode": "21866",
+      "Description": "UNION JACK FLAG LUGGAGE TAG",
+      "Quantity": "1",
+      "InvoiceDate": "2010-12-01 11:45:00",
+      "UnitPrice": "1.25",
+      "CustomerID": "17908.0",
+      "Country": "United Kingdom"
+    },
+    {
+      "InvoiceNo": "536409",
+      "StockCode": "22866",
+      "Description": "HAND WARMER SCOTTY DOG DESIGN",
+      "Quantity": "1",
+      "InvoiceDate": "2010-12-01 11:45:00",
+      "UnitPrice": "2.1",
+      "CustomerID": "17908.0",
+      "Country": "United Kingdom"
+    },
+    {
+      "InvoiceNo": "536409",
+      "StockCode": "22900",
+      "Description": " SET 2 TEA TOWELS I LOVE LONDON ",
+      "Quantity": "1",
+      "InvoiceDate": "2010-12-01 11:45:00",
+      "UnitPrice": "2.95",
+      "CustomerID": "17908.0",
+      "Country": "United Kingdom"
+    }
+  ],
+  "n_country": 38,
+  "country_top": {
+    "United Kingdom": 495478,
+    "Germany": 9495,
+    "France": 8557,
+    "EIRE": 8196,
+    "Spain": 2533,
+    "Netherlands": 2371,
+    "Belgium": 2069,
+    "Switzerland": 2002,
+    "Portugal": 1519,
+    "Australia": 1259,
+    "Norway": 1086,
+    "Italy": 803
+  },
+  "uk_share": 91.43,
+  "nonstandard_country": [],
+  "n_days": 305,
+  "n_days_full_range": 374,
+  "dow_rows": {
+    "Mon": 95111,
+    "Tue": 101808,
+    "Wed": 94565,
+    "Thu": 103857,
+    "Fri": 82193,
+    "Sun": 64375
+  },
+  "hour_min_max": [
+    6,
+    20
+  ],
+  "hour_outside_business": 0,
+  "special_code_rows": 2980,
+  "special_code_detail": {
+    "POST": 1256,
+    "DOT": 710,
+    "M": 571,
+    "C2": 144,
+    "D": 77,
+    "S": 63,
+    "BANK CHARGES": 37,
+    "AMAZONFEE": 34,
+    "CRUK": 16,
+    "DCGSSGIRL": 13,
+    "DCGSSBOY": 11,
+    "gift_0001_20": 10
+  },
+  "special_nonpost_rows": 1724,
+  "desc_missing_rows": 1454,
+  "desc_recoverable": 1342,
+  "revenue_total_raw": 9747747.93,
+  "extreme_orders": {
+    "max_invoice_amount": 168469.6,
+    "min_invoice_amount": -168469.6
+  },
+  "top5_invoice_amount": {
+    "581483": 168469.6,
+    "541431": 77183.6,
+    "574941": 52940.94,
+    "576365": 50653.91,
+    "556444": 38970.0
+  },
+  "bad_debt_row": [
+    {
+      "InvoiceNo": "A563185",
+      "StockCode": "B",
+      "Description": "Adjust bad debt",
+      "Quantity": "1",
+      "InvoiceDate": "2011-08-12 14:50:00",
+      "UnitPrice": "11062.06",
+      "CustomerID": "nan",
+      "Country": "United Kingdom",
+      "_d": "2011-08-12",
+      "Revenue": "11062.06"
+    },
+    {
+      "InvoiceNo": "A563186",
+      "StockCode": "B",
+      "Description": "Adjust bad debt",
+      "Quantity": "1",
+      "InvoiceDate": "2011-08-12 14:51:00",
+      "UnitPrice": "-11062.06",
+      "CustomerID": "nan",
+      "Country": "United Kingdom",
+      "_d": "2011-08-12",
+      "Revenue": "-11062.06"
+    },
+    {
+      "InvoiceNo": "A563187",
+      "StockCode": "B",
+      "Description": "Adjust bad debt",
+      "Quantity": "1",
+      "InvoiceDate": "2011-08-12 14:52:00",
+      "UnitPrice": "-11062.06",
+      "CustomerID": "nan",
+      "Country": "United Kingdom",
+      "_d": "2011-08-12",
+      "Revenue": "-11062.06"
+    }
+  ],
+  "qty_gt_10000_rows": 3,
+  "price_gt_1000_rows": 120
+}
